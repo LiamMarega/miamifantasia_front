@@ -1,0 +1,68 @@
+@import '../../assets/styles/variables.scss';
+
+.containerHomeScreen {
+  background-color: $primary;
+  width: 100vw;
+  height: 100%;
+  min-height: 150vh;
+  overflow-x: hidden;
+  position: relative;
+  .ContainerCarouselComponent {
+    width: 100vw;
+    height: 100vh;
+    .containerText {
+      background-color: $primary;
+      height: 100vh;
+      position: relative;
+
+      .text {
+        position: absolute;
+        top: 30%;
+        left: 60%;
+        z-index: 5;
+        h1 {
+          width: 50%;
+          font-weight: 800;
+          font-size: 5rem;
+          font-size: 'MonumentExtended';
+        }
+        p {
+          padding: 5% 0;
+        }
+      }
+    }
+    .containerCarousel {
+      height: 100vh;
+      width: 100%;
+      padding: 0;
+
+      .splide {
+        padding: 0;
+
+        img {
+          max-height: 100vh;
+        }
+      }
+    }
+  }
+
+  .containerCarouselProducts {
+    padding: 15% 0;
+    position: relative;
+    #textBg {
+      position: absolute;
+      width: 100%;
+      font-size: 25vw;
+      left: -5%;
+      margin-top: 7%;
+      color: #181918;
+      z-index: 0;
+    }
+
+    h3 {
+      margin-left: 12%;
+      padding: 7% 0;
+      font-size: 2rem;
+    }
+  }
+}
