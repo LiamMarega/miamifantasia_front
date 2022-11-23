@@ -4,6 +4,7 @@ import App from './App';
 import './index.css';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { green, purple } from '@mui/material/colors';
+import '../src/assets/styles/index.scss';
 
 const theme = createTheme({
   palette: {

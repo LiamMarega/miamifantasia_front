@@ -5,6 +5,7 @@ import Navbar from '../../components/Navbar';
 import Carousel from './parts/Carousel';
 import CarouselProducts from './parts/CarouselProducts';
 import ColorBox from '../../components/Elements/ColorBox';
+import Photos from './parts/Photos';
 
 function HomeScreen() {
   return (
@@ -13,6 +14,7 @@ function HomeScreen() {
       <Navbar />
       <Carousel />
       <CarouselProducts />
+      <Photos />
     </div>
   );
 }

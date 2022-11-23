@@ -13,7 +13,9 @@ function Carousel() {
             <div className="text">
               <h1>LUXURY LIFESTYLE RENTALS</h1>
               <p>loremp ipsum dolor sit amet.</p>
-              <Button variant="contained">Reserve now</Button>
+              <Button variant="outlined" sx={{ padding: ' 3% 7%' }}>
+                Reserve now
+              </Button>
             </div>
           </div>
         </Grid>
