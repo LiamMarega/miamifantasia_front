@@ -43,7 +43,7 @@ function Photos() {
       </Grid>
       <Grid container spacing={2} className="ContainerImgInfo">
         <Grid md={7} justifyContent="center" alignContent="center">
-          <div className="ContainerText flex">
+          <div className="ContainerText mt-5">
             <h3>LUXURY RENTALS</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
