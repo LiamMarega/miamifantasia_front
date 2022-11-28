@@ -10,6 +10,7 @@
   .ContainerCarouselComponent {
     width: 100vw;
     height: 100vh;
+
     .containerText {
       background-color: $primary;
       height: 100vh;
@@ -100,6 +101,10 @@
         h3 {
           font-size: 3rem;
           margin-bottom: 5%;
+        }
+        p {
+          opacity: 0.5;
+          margin: 2.5% 0;
         }
       }
     }
