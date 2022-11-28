@@ -9,8 +9,6 @@ import boat3 from '../../../../assets/images/3.png';
 import boat4 from '../../../../assets/images/4.png';
 import boat5 from '../../../../assets/images/5.png';
 
-import MovingText from 'react-moving-text';
-
 function Carousel() {
   return (
     <div className="ContainerCarouselComponent">
@@ -20,7 +18,6 @@ function Carousel() {
             <div className="text ">
               <h1>LUXURY LIFESTYLE RENTALS</h1>
 
-              <MovingText type="typewriter" dataText={['Vacay  ', 'Mood   ', ';)         ']} />
               <Button variant="outlined" sx={{padding: ' 3% 7%', margin: '5% 0'}}>
                 Reserve now
               </Button>
