@@ -1,5 +1,6 @@
-import {Button, Grid, Stack} from '@mui/material';
 import React from 'react';
+import {Button, Stack} from '@mui/material';
+import Grid from '@mui/material/Unstable_Grid2';
 import ColorBox from '../../../../components/Elements/ColorBox';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import CelebrationIcon from '@mui/icons-material/Celebration';
