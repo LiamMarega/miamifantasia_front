@@ -3,7 +3,8 @@ import React from 'react';
 import ColorBox from '../../../../components/Elements/ColorBox';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import CelebrationIcon from '@mui/icons-material/Celebration';
-import boat1 from '../../../../assets/images/6.png';
+import boat1 from '../../../../assets/images/boats/boat2.jpeg';
+import boat2 from '../../../../assets/images/6.png';
 
 function Photos() {
   return (
@@ -13,11 +14,7 @@ function Photos() {
           <div className="ContainerImage">
             <ColorBox config={{top: '40%', left: '93%', height: '50%'}} />
 
-            <img
-              src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/2018-rolls-royce-phantom-1536152159.png"
-              alt=""
-              width="100%"
-            />
+            <img src={boat1} alt="" width="100%" />
           </div>
         </Grid>
         <Grid
@@ -42,7 +39,7 @@ function Photos() {
         <Grid md={7} justifyContent="center" alignContent="center">
           <div className="ContainerText mt-5">
             <h3>LUXURY RENTALS</h3>
-            <p>Are you looking for exotic or luxury car rental in Miami7</p>
+            <p>Are you looking for exotic or luxury car rental in Miami?</p>
             <p>
               You want to rent a luxury car OF maybe exotic car? Get in touch with BoysToys Miami -
             </p>
@@ -67,7 +64,7 @@ function Photos() {
         </Grid>
         <Grid xs={12} md={4} justifyContent="center" alignContent="center">
           <div className="ContainerImage">
-            <img src={boat1} alt="boat1" width="100%" />
+            <img src={boat2} alt="boat1" width="100%" />
           </div>
         </Grid>
       </Grid>
