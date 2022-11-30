@@ -1,3 +1,4 @@
+import React from 'react';
 import {Button} from '@mui/material';
 import {Stack} from '@mui/system';
 import {Splide, SplideSlide} from '@splidejs/react-splide';
@@ -5,8 +6,10 @@ import TimeToLeaveIcon from '@mui/icons-material/TimeToLeave';
 import DirectionsBoatIcon from '@mui/icons-material/DirectionsBoat';
 import CelebrationIcon from '@mui/icons-material/Celebration';
 import Grid from '@mui/material/Unstable_Grid2';
-
-import React from 'react';
+import boat1 from '../../../../assets/images/slider/boat1.png';
+import boat2 from '../../../../assets/images/slider/boat2.png';
+import boat3 from '../../../../assets/images/slider/boat3.png';
+import boat4 from '../../../../assets/images/slider/boat4.png';
 
 function CarouselProducts() {
   return (
@@ -39,25 +42,16 @@ function CarouselProducts() {
             }}
           >
             <SplideSlide>
-              <img
-                src="https://www.freeiconspng.com/thumbs/car-png/land-rover-range-rover-car-png-25.png"
-                alt="Image 1"
-                width="200"
-              />
+              <img src={boat1} alt="Image 1" width="350" />
             </SplideSlide>
             <SplideSlide>
-              <img
-                src="https://www.freeiconspng.com/thumbs/car-png/land-rover-range-rover-car-png-25.png"
-                alt="Image 1"
-                width="200"
-              />
+              <img src={boat2} alt="Image 2" width="350" />
             </SplideSlide>
             <SplideSlide>
-              <img
-                src="https://www.freeiconspng.com/thumbs/car-png/land-rover-range-rover-car-png-25.png"
-                alt="Image 1"
-                width="200"
-              />
+              <img src={boat3} alt="Image 3" width="350" />
+            </SplideSlide>
+            <SplideSlide>
+              <img src={boat4} alt="Image 4" width="350" />
             </SplideSlide>
           </Splide>
         </Grid>
