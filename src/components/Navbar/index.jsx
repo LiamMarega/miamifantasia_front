@@ -12,10 +12,17 @@ import MenuItem from '@mui/material/MenuItem';
 import LogoIMG from '../../assets/images/Logo.png';
 import PhoneIcon from '@mui/icons-material/Phone';
 import SegmentIcon from '@mui/icons-material/Segment';
+import { useNavigate } from 'react-router';
 
-const pages = ['Home', 'About us', 'Contats'];
+const pages = [
+  { name: 'Home', url: '' },
+  { name: 'About us', url: 'about' },
+  { name: 'Contats', url: 'contact' },
+  { name: 'FAQ', url: 'faq' }
+];
 
 function Navbar() {
+  const navigate = useNavigate();
   const [anchorElNav, setAnchorElNav] = useState(null);
   const [anchorElUser, setAnchorElUser] = useState(null);
   const [navBarbackground, setNavBarbackgorund] = useState(false);
@@ -43,6 +50,10 @@ function Navbar() {
       window.removeEventListener('scroll', changeBackground);
     };
   }, []);
+
+  const navigateTo = (url) => {
+    navigate(`/${url}`);
+  };
 
   const navbarStyle = {
     backgroundColor: navBarbackground ? '#1d1c1d' : 'transparent',
@@ -93,8 +104,8 @@ function Navbar() {
               }}
             >
               {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
+                <MenuItem key={page.name} onClick={handleCloseNavMenu}>
+                  <Typography textAlign="center">{page.name}</Typography>
                 </MenuItem>
               ))}
             </Menu>
@@ -120,7 +131,7 @@ function Navbar() {
             {pages.map((page) => (
               <Button
                 key={page}
-                onClick={handleCloseNavMenu}
+                onClick={() => navigateTo(page.url)}
                 sx={{
                   my: 2,
                   marginLeft: '6%',
@@ -128,7 +139,7 @@ function Navbar() {
                   display: 'block'
                 }}
               >
-                {page}
+                {page.name}
               </Button>
             ))}
           </Box>
