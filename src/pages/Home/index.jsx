@@ -9,6 +9,7 @@ import Photos from './parts/Photos';
 import Contact from './parts/Conctact';
 import Footer from '../../components/Footer';
 import BasePages from '../base';
+import IconsVertical from '../../components/Elements/IconsVertical/IconsVertical';
 
 function HomeScreen() {
   return (
@@ -16,6 +17,9 @@ function HomeScreen() {
       <BasePages>
         <ColorBox config={{ top: 0, left: 0, height: '170px' }} />
         <Carousel />
+        <IconsVertical
+          config={{ top: '35vh', left: '10vh', height: '100%', size: '25px' }}
+        />
         <CarouselProducts />
         <Photos />
       </BasePages>
