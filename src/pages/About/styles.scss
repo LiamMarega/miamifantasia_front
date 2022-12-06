@@ -1,0 +1,24 @@
+.ContainerAboutPage {
+  img {
+    width: 100%;
+  }
+
+  p {
+    padding: 3% 0;
+    text-align: justify;
+  }
+}
+
+//media query mobile
+@media (max-width: 768px) {
+  .ContainerAboutPage {
+    img {
+      width: 100%;
+    }
+
+    p {
+      padding: 3% 0;
+      text-align: start;
+    }
+  }
+}
