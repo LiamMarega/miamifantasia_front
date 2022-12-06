@@ -13,6 +13,7 @@ import '@splidejs/react-splide/css/core';
 
 import ScrollOnTop from './assets/utils/router/scrollOnTop';
 import FrequentQuestions from './pages/FrequentQuestions';
+import About from './pages/About';
 
 function App() {
   return (
@@ -22,6 +23,8 @@ function App() {
           <Routes>
             <Route path="/" element={<HomeScreen />} />
             <Route path="/faq" element={<FrequentQuestions />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<About />} />
           </Routes>
         </ScrollOnTop>
       </div>

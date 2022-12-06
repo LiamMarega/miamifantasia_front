@@ -60,7 +60,7 @@ function Footer() {
             <ListItem>
               <TextareaAutosize
                 minRows={7.2}
-                placeholder="Outlined"
+                placeholder="Message"
                 variant="outlined"
               />
             </ListItem>

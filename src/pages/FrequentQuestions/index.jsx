@@ -4,17 +4,11 @@ import ControlledAccordions from '../../components/Accordion';
 import FyQ from '../../assets/files/FyQ.jsx';
 import Navbar from '../../components/Navbar';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
-import { useNavigate } from 'react-router';
 import Footer from '../../components/Footer';
 import BasePages from '../base';
+import navigateHome from '../../utils/navigateHome';
 
 function FrequentQuestions() {
-  const navigate = useNavigate();
-  //onclick navigate home
-  const navigateHome = () => {
-    navigate('/');
-  };
-
   return (
     <BasePages>
       <Box sx={{ padding: '7%' }}>
