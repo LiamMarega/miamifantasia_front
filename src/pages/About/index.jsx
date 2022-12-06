@@ -4,14 +4,21 @@ import BasePages from '../base';
 import Grid from '@mui/material/Unstable_Grid2'; // Grid version 2
 import boat from '../../assets/images/boats/745CA952-6DA2-4E46-9C35-EE6DC836C49D_1_105_c.jpeg';
 import boat2 from '../../assets/images/boats/B7D88445-8ABB-4EA5-80E6-67D1C5CB658E_1_105_c.jpeg';
-import navigateHome from '../../utils/navigateHome';
+
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import './styles.scss';
 import ImageList from '../../components/ImageList';
 import dataIMG from '../../assets/files/imagesAbout.jsx';
 import QuiltedImageList from '../../components/ImageList';
+import { useNavigate } from 'react-router';
 
 function About() {
+  const navigate = useNavigate();
+
+  function navigateHome() {
+    navigate('/');
+  }
+
   return (
     <BasePages>
       <Box
@@ -28,7 +35,7 @@ function About() {
         </div>
 
         <Grid container spacing={3}>
-          <Grid xs={8}>
+          <Grid xs={12} md={8}>
             <p>
               "Experiences Unlimited" is a company founded by Sofia, a
               passionate entrepreneur who is dedicated to providing unique and
@@ -45,15 +52,15 @@ function About() {
               experience safe, fun, and memorable for their customers.
             </p>
           </Grid>
-          <Grid xs={3}>
+          <Grid xs={12} md={3}>
             <img src={boat} alt="boat" />
           </Grid>
         </Grid>
         <Grid container spacing={3}>
-          <Grid xs={3}>
+          <Grid xs={12} md={3}>
             <img src={boat2} alt="boat" />
           </Grid>
-          <Grid xs={8}>
+          <Grid xs={12} md={8}>
             <p>
               We are a leading company in the luxury rental market. We
               specialize in offering our clients exclusive, high-quality

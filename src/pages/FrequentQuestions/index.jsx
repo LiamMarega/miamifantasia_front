@@ -6,9 +6,14 @@ import Navbar from '../../components/Navbar';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import Footer from '../../components/Footer';
 import BasePages from '../base';
-import navigateHome from '../../utils/navigateHome';
+import { useNavigate } from 'react-router';
 
 function FrequentQuestions() {
+  const navigate = useNavigate();
+
+  function navigateHome() {
+    navigate('/');
+  }
   return (
     <BasePages>
       <Box sx={{ padding: '7%' }}>
