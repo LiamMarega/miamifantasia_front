@@ -10,6 +10,7 @@ import boat1 from '../../../../assets/images/slider/boat1.png';
 import boat2 from '../../../../assets/images/slider/boat2.png';
 import boat3 from '../../../../assets/images/slider/boat3.png';
 import boat4 from '../../../../assets/images/slider/boat4.png';
+import {motion} from 'framer-motion';
 
 function CarouselProducts() {
   return (
