@@ -66,7 +66,7 @@ function Navbar() {
     <AppBar position='fixed' sx={navbarStyle}>
       <Container maxWidth='xl'>
         <Toolbar disableGutters sx={{height: "14vh"}}>
-          <img src={LogoIMG} alt='logo' width='30px' />
+          <img src={LogoIMG} alt='logo' width='30px' style={{borderRadius: "50%"}} />
 
           <Box
             sx={{
