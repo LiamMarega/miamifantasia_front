@@ -1,27 +1,29 @@
-import React from 'react';
+import React from "react"
 
-import './styles.scss';
-import Navbar from '../../components/Navbar';
-import Carousel from './parts/Carousel';
-import CarouselProducts from './parts/CarouselProducts';
-import ColorBox from '../../components/Elements/ColorBox';
-import Photos from './parts/Photos';
-import BasePages from '../base';
-import IconsVertical from '../../components/Elements/IconsVertical/IconsVertical';
+import "./styles.scss"
+import Navbar from "../../components/Navbar"
+import Carousel from "./parts/Carousel"
+import CarouselProducts from "./parts/CarouselProducts"
+import ColorBox from "../../components/Elements/ColorBox"
+import Photos from "./parts/Photos"
+import BasePages from "../base"
+import IconsVertical from "../../components/Elements/IconsVertical/IconsVertical"
+import VideoPlayer from "./parts/VideoPlayer"
 
 function HomeScreen() {
   return (
-    <div className="containerHomeScreen">
+    <div className='containerHomeScreen'>
       <BasePages>
-        <ColorBox config={{top: 0, left: 0, height: '170px'}} />
+        <ColorBox config={{top: 0, left: 0, height: "170px"}} />
 
         <Carousel />
-        <IconsVertical config={{top: '35vh', left: '10vh', height: '100%', size: '25px'}} />
+        <IconsVertical config={{top: "35vh", left: "10vh", height: "100%", size: "25px"}} />
         <CarouselProducts />
         <Photos />
+        <VideoPlayer />
       </BasePages>
     </div>
-  );
+  )
 }
 
-export default HomeScreen;
+export default HomeScreen
