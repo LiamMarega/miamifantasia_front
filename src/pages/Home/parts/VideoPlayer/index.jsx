@@ -1,6 +1,5 @@
 import React from "react"
 import "./styles.scss"
-import {motion} from "framer-motion"
 
 function VideoPlayer() {
   const cardVariants2 = {
@@ -29,16 +28,12 @@ function VideoPlayer() {
 
   return (
     <div className='containerVideoPlayer flex'>
-      <motion.div initial='offscreen' whileInView='onscreen'>
-        <motion.div variants={cardVariants2}>
-          <iframe
-            src='https://www.youtube.com/embed/FpYzkzYtliU'
-            title="95m O'PARI Luxury Yacht"
-            frameborder='0'
-            allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
-          ></iframe>
-        </motion.div>
-      </motion.div>
+      <iframe
+        src='https://www.youtube.com/embed/FpYzkzYtliU'
+        title="95m O'PARI Luxury Yacht"
+        frameborder='0'
+        allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
+      ></iframe>
     </div>
   )
 }
