@@ -55,6 +55,12 @@ function Navbar() {
     navigate(`/${url}`)
   }
 
+  const openLink = (link) => {
+    if (link) {
+      window.open(link, "_blank")
+    }
+  }
+
   const navbarStyle = {
     backgroundColor: navBarbackground ? "#1d1c1d" : "transparent",
     color: navBarbackground ? "#000" : "#fff",
@@ -134,8 +140,13 @@ function Navbar() {
             ))}
           </Box>
           <Box>
-            <Button variant='contained' color='warning' startIcon={<PhoneIcon />}>
-              +54 9 11 1234-5678
+            <Button
+              onClick={() => openLink("tel:+5493436203341")}
+              variant='contained'
+              color='warning'
+              startIcon={<PhoneIcon />}
+            >
+              +54 9 343 620-3341
             </Button>
           </Box>
         </Toolbar>

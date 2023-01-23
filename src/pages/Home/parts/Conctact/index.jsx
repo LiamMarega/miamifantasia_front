@@ -9,6 +9,12 @@ import TextareaAutosize from "@mui/material/TextareaAutosize"
 import "./styles.scss"
 
 function Contact() {
+  const openLink = (link) => {
+    if (link) {
+      window.open(link, "_blank")
+    }
+  }
+
   return (
     <div className='containerContact'>
       <Grid container justifyContent='center' alignItems='center'>
@@ -19,7 +25,7 @@ function Contact() {
         <Grid md={2}>
           <Stack spacing={1}>
             <ListItem>Miami -FL | USA</ListItem>
-            <ListItem>+54 9 11 1234-5678</ListItem>
+            <ListItem onClick={() => openLink("tel:+5493436203341")}>+54 9 343 620-3341</ListItem>
             <ListItem>liammarega85@gmail.com</ListItem>
           </Stack>
           <Stack direction='row'>

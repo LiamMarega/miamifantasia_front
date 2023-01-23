@@ -25,7 +25,7 @@ function Footer() {
         <Grid md={2}>
           <Stack spacing={1}>
             <ListItem>Miami -FL | USA</ListItem>
-            <ListItem>+54 9 11 1234-5678</ListItem>
+            <ListItem onClick={() => openLink("tel:+5493436203341")}>+54 9 343 620-3341</ListItem>
             <ListItem className='pointer' onClick={() => openLink("mailto:liammarega85@gmail.com")}>
               liammarega85@gmail.com
             </ListItem>
